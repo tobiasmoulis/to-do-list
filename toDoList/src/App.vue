@@ -3,6 +3,7 @@
 
 <template>
   <h1>ahoj</h1>
+  <h1>ahoj</h1>
 </template>
 
 <style lang="scss">
