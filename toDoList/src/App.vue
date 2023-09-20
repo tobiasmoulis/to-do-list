@@ -1,9 +1,20 @@
 <script setup>
 
 let name;
+let num;
+let nan = NaN;
 
 function addTask() {
-  alert(name)
+
+  num = parseInt(num)
+
+  if (isNaN(num) == true){
+    alert('Not a number')
+  }
+  else{
+    console.log(num)
+  }
+  console.log(name)
 }
 </script>
 
@@ -14,7 +25,7 @@ function addTask() {
     </div>
     <div class="addTask">
     <input v-model="name" placeholder="Název úkolu">
-    <input type="text" placeholder="Počet úkolů">
+    <input v-model="num" placeholder="Počet úkolů">
     <button @click="addTask">Vytvořit</button>
   </div>
   </div>
