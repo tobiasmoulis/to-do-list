@@ -2,7 +2,6 @@
 
 let name;
 let num;
-let nan = NaN;
 
 function addTask() {
 
@@ -12,9 +11,9 @@ function addTask() {
     alert('Not a number')
   }
   else{
+    console.log(name)
     console.log(num)
   }
-  console.log(name)
 }
 </script>
 
@@ -22,6 +21,9 @@ function addTask() {
   <div class="Page">
     <div class="Header">
       <h1>YOUR TO DO LIST</h1>
+    </div>
+    <div class="items">
+      <div class="item"></div>
     </div>
     <div class="addTask">
     <input v-model="name" placeholder="Název úkolu">
@@ -79,18 +81,31 @@ input,select{vertical-align:middle}
     font-weight: 700;
   }
   button:hover{
-    background-color: darken(rgba(253, 182, 105, 1), 10);
+    background-color: darken(rgba(253, 182, 105, 1), 5);
+  }
+}
+.items{
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  .item{
+    background-color: rgba(38, 39, 42, 1);
+    border-radius: 10px;
+    width: 20%;
+    height: 100%;
   }
 }
 .Page{
   background-color: #08090B;
   height: 100vh;
   width: 100vw;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .Header{
-  height: 40%;
    width: 100%
-  };
+};
 h1{
 color: #FDB669
 }
