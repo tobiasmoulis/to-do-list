@@ -133,10 +133,12 @@ button:hover{
       font-size: 1.5rem;
       text-align: center;
       color: rgba(253, 182, 105, 1);
+      width: 100%;
     }
     h3{
       color: white;
       font-weight: 400;
+      width: 100%;
     }
     button{
       margin-top: 1vh;
