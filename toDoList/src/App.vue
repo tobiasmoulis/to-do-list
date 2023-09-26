@@ -169,4 +169,27 @@ text-align: center;
 justify-content: center;
 font-size: 4rem;}
 
+@media screen and (max-width: 800px) {
+  .items{
+    grid-template-columns: 1fr 1fr;
+    .item{
+      width: 38vw;
+    }
+  }
+  h1{
+    font-size: 2rem;
+  }
+  .addTask{
+    input{
+      width: 70%;
+    }
+    textarea{
+      width: 70%;
+    }
+    button{
+      padding: 1vh 10vw;
+    }
+  }
+}
+
 </style>
